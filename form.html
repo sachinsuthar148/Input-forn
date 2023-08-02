@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      body {
+        background: url("https://i.pinimg.com/736x/6b/e1/35/6be13526cd3189dc14f5aa8a0984647a.jpg")
+          no-repeat;
+        background-size: cover;
+        background-repeat: repeat-y;
+      }
+
+      .box {
+        width: 80%;
+        height: fit-content;
+        margin: 6% auto;
+        border: 1px solid rgb(252, 246, 246);
+
+        background-color: transparent;
+        backdrop-filter: blur(100px);
+        color: white;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+      .heading {
+        text-decoration: underline;
+        font-size: 30px;
+        margin-top: 10px;
+      }
+      .input {
+        outline: none;
+        border: none;
+        border-bottom: 2px solid white;
+        padding: 8px;
+        border-radius: 15px;
+        background: transparent;
+        color: white;
+        width: 200px;
+        font-size: 15px;
+        margin: 10px;
+      }
+      .btn {
+        margin-top: 19px;
+        margin: 19px 5px 0px;
+        padding: 4px 25px;
+        border-radius: 20px;
+        font-size: 17px;
+        box-shadow: white 0.5px 0.5px 5px;
+      }
+      .btn:hover{
+        background-color: rgb(1,18,68);
+        color: white;
+        box-shadow: white 2px 2px 5px;
+      }
+      label
+      {
+        margin-top: 10px;
+        margin-left: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3 class="heading">Assignment Form</h3>
+      <form action="#">
+        <input class="input" type="text" placeholder="First Name" />
+        <input class="input" type="text" placeholder="Last Name" />
+
+        <input class="input" type="email" placeholder="E-Mail" />
+        <br />
+
+        <input class="input" type="number" placeholder="Mobile Number" />
+        <input class="input" type="password" placeholder="Password" />
+        <br />
+        <label >Select Local Time:</label>
+        <input
+          class="input"
+          type="datetime-local"
+          placeholder="Date-Time Local" />
+          <label >Select Date:</label>
+        <input class="input" type="date" placeholder="Date" />
+        <br>
+        <label >Select Month:</label>
+        <input class="input" type="month" placeholder="Choose Month" />
+        <label >Select Week:</label>
+        <input class="input" type="week" placeholder="Select Week" />
+        <br>
+        <label >Select Time:</label>
+        <input class="input" type="time" placeholder="Select Time" />
+        <br />
+        <input type="checkbox" value="Age>18" />
+        <label for="gender">Above 18 years</label>
+        <label for="gender">Gender:</label>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <input type="radio" name="gender" value="Male" />
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" value="Male" />
+        <label for="gender">Female</label>
+        
+        <br />
+        <br>
+        <input type="file" />
+        <br>
+        <br>
+        <label for="color">Select Color:</label>
+        <input class="input" type="color" placeholder="Choose color" />
+        <br />
+        <input class="input" type="search" placeholder="Search Here" />
+        <input class="input" type="range" placeholder="Select Range" />
+        <input class="input" type="url" placeholder="Enter Url" />
+        <br />
+        <input class="input" type="tel" placeholder="Enter Alernate Number" />
+        <br />
+        <input class="btn" type="submit" placeholder="Submit Now" />
+        <input class="btn" type="reset" placeholder="Reset" />
+      </form>
+    </div>
+  </body>
+</html>
